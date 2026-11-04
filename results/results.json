@@ -1,0 +1,193 @@
+{
+  "status": "Ideal-model calculations only; no hardware results",
+  "model": {
+    "masses_kg": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "nominal_springs_N_per_m": [
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0
+    ],
+    "demonstration_end_spring_loss_fraction": 0.25,
+    "brace_N_per_m": 500.0,
+    "illustrative_frequency_noise_sigma_Hz": 0.02,
+    "profile_fit_nuisance_bounds": {
+      "d_right": [
+        0.0,
+        0.4
+      ],
+      "alpha": [
+        0.9,
+        1.1
+      ],
+      "brace_factor": [
+        0.97,
+        1.03
+      ]
+    }
+  },
+  "baseline_left_Hz": [
+    11.43140667221511,
+    21.798818369207282,
+    29.1655014367892
+  ],
+  "baseline_right_Hz": [
+    11.43140667221511,
+    21.798818369207282,
+    29.1655014367892
+  ],
+  "symmetric_center_probe_left_Hz": [
+    13.606159252515294,
+    21.82128473173749,
+    30.361940937021142
+  ],
+  "symmetric_center_probe_right_Hz": [
+    13.606159252515294,
+    21.82128473173749,
+    30.361940937021142
+  ],
+  "local_sensitivity_units": "Hz per unit dimensionless dl, dr, alpha, evaluated at healthy nominal point",
+  "local_singular_values_baseline": [
+    20.0407756764189,
+    3.159844748473166,
+    3.031809706315566e-15
+  ],
+  "local_singular_values_combined": [
+    27.782406739995583,
+    4.1880054193207155,
+    0.9233831970291227
+  ],
+  "rank_baseline": 2,
+  "rank_combined": 3,
+  "brace_sweep": [
+    {
+      "brace_N_per_m": 0.0,
+      "left_Hz": [
+        11.43140667221511,
+        21.798818369207282,
+        29.1655014367892
+      ],
+      "right_Hz": [
+        11.43140667221511,
+        21.798818369207282,
+        29.1655014367892
+      ],
+      "raw_three_mode_distance_Hz": 0.0,
+      "wrong_hypothesis_local_profile": {
+        "d_right": 0.25,
+        "alpha": 1.0,
+        "brace_factor": 1.0,
+        "rms_residual_Hz": 0.0,
+        "max_absolute_residual_Hz": 0.0
+      }
+    },
+    {
+      "brace_N_per_m": 100.0,
+      "left_Hz": [
+        11.756959448468573,
+        22.083058599303694,
+        29.256362354126914
+      ],
+      "right_Hz": [
+        11.656690874543884,
+        22.088338548682678,
+        29.292476317021997
+      ],
+      "raw_three_mode_distance_Hz": 0.10670465359262865,
+      "wrong_hypothesis_local_profile": {
+        "d_right": 0.23511221150735878,
+        "alpha": 0.9971497148828496,
+        "brace_factor": 1.0299999999999963,
+        "rms_residual_Hz": 0.03212605487139195,
+        "max_absolute_residual_Hz": 0.05777756103216447
+      }
+    },
+    {
+      "brace_N_per_m": 250.0,
+      "left_Hz": [
+        12.181191980055413,
+        22.50790790392766,
+        29.407998884120143
+      ],
+      "right_Hz": [
+        11.951035056740608,
+        22.50790790392765,
+        29.50228122528722
+      ],
+      "raw_three_mode_distance_Hz": 0.24871945884003946,
+      "wrong_hypothesis_local_profile": {
+        "d_right": 0.213388162570001,
+        "alpha": 0.9929947378706309,
+        "brace_factor": 1.0299999999999998,
+        "rms_residual_Hz": 0.07205473995432873,
+        "max_absolute_residual_Hz": 0.12454204701733751
+      }
+    },
+    {
+      "brace_N_per_m": 500.0,
+      "left_Hz": [
+        12.750896531774742,
+        23.19533043803621,
+        29.70748690006971
+      ],
+      "right_Hz": [
+        12.348867759929504,
+        23.155769834626152,
+        29.90751214703622
+      ],
+      "raw_three_mode_distance_Hz": 0.45077962926198273,
+      "wrong_hypothesis_local_profile": {
+        "d_right": 0.17874515446203088,
+        "alpha": 0.9864203382907962,
+        "brace_factor": 1.0299999999999994,
+        "rms_residual_Hz": 0.12336208750071129,
+        "max_absolute_residual_Hz": 0.19423553137427163
+      }
+    },
+    {
+      "brace_N_per_m": 1000.0,
+      "left_Hz": [
+        13.535746902926675,
+        24.40039686670972,
+        30.515556073770366
+      ],
+      "right_Hz": [
+        12.906627459727122,
+        24.21149601952681,
+        30.93569785986256
+      ],
+      "raw_three_mode_distance_Hz": 0.7797396516138425,
+      "wrong_hypothesis_local_profile": {
+        "d_right": 0.11518026621294677,
+        "alpha": 0.9773989002802385,
+        "brace_factor": 0.9954125713986881,
+        "rms_residual_Hz": 0.20076688677915472,
+        "max_absolute_residual_Hz": 0.2956596999754346
+      }
+    }
+  ],
+  "checks": {
+    "reflection_matrix_error": 0.0,
+    "healthy_closed_form": "passed",
+    "analytic_vs_finite_difference_sensitivity": "passed",
+    "center_probe_remains_ambiguous": "passed",
+    "failed_brace_change_vector_max_Hz": 1.396512068828926,
+    "return_drift_uniform_stiffness_minus1pct_max_Hz": 0.1461939102688774
+  },
+  "added_brace_only_at_0p2mm": {
+    "force_N": 0.1,
+    "stored_energy_J": 1e-05
+  },
+  "limits": [
+    "Ranks are local to a chosen three-parameter ideal model.",
+    "Wrong-hypothesis fits are local multistart numerical searches, not global exclusion certificates.",
+    "Uniform stiffness scale is not a validated model of temperature or humidity.",
+    "No damping, friction, fixture mass, mode-matching failure, actuator hysteresis or sensor error physics.",
+    "Frequency noise is illustrative; no demonstrated hardware precision or sampling model.",
+    "No statistical detection rate, false-alarm guarantee or structural safety certification."
+  ]
+}
